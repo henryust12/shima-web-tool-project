@@ -11,6 +11,7 @@ const randomHex = () => {
 
 var h = document.getElementById("hex-"+1);
 var r = randomHex();
+var element = document.querySelector('.result-'+1);
 
 const loadRandom = () => {
     for (let index = 1; index <= 50; index++) {
@@ -18,7 +19,7 @@ const loadRandom = () => {
         h = document.getElementById("hex-"+index);
         r = randomHex();
         document.getElementById("hex-"+index).innerHTML = r;
-        var element = document.querySelector('.result-'+index);
+        element = document.querySelector('.result-'+index);
         element.style.backgroundColor = r;
         element.style.width = "100px";
         element.style.height = "100px";
