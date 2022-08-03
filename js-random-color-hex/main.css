@@ -1,0 +1,27 @@
+.container {
+
+}
+
+.button-container {
+    text-align: center;
+}
+.button-container input {
+    font-size: large;
+    padding: 1em;
+
+}
+
+.result-container {
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    
+    gap: 1rem;
+    justify-content: center;
+    margin: 1em;
+    padding: 4em;
+}
+
+.result-container h3{
+   text-align: center;background-color: white;
+}
